@@ -53,7 +53,7 @@ install(FILES "${PROJECT_BINARY_DIR}/${PROJECT_NAME}Config.cmake"
 install(FILES "app.h" "assetsys.h" "hashtable.h" "http.h" "ini.h"
               "rnd.h" "speech.h" "strpool.h" "sysfont.h" "testfw.h"
               "thread.h"
-        DESTINATION include)
+        DESTINATION include/libs)
 
 #set(CPACK_RESOURCE_FILE_LICENSE "${PROJECT_SOURCE_DIR}/LICENSE")
 
