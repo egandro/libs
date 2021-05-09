@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.12)
 
-project("cpp_game_lib"
+project("cpp_game_lib" VERSION 1.0.0
              DESCRIPTION "Single-file public domain libraries for C/C++ (dual licensed under MIT)."
              HOMEPAGE_URL "https://github.com/mattiasgustavsson/libs")
 
@@ -31,9 +31,9 @@ install(TARGETS ${PROJECT_NAME}
         RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 
 include(CMakePackageConfigHelpers)
-#write_basic_package_version_file("${PROJECT_NAME}ConfigVersion.cmake"
-#                                 VERSION ${PROJECT_VERSION}
-#                                 COMPATIBILITY SameMajorVersion)
+write_basic_package_version_file("${PROJECT_NAME}ConfigVersion.cmake"
+                                 VERSION ${PROJECT_VERSION}
+                                 COMPATIBILITY SameMajorVersion)
 
 configure_package_config_file(
   "${PROJECT_SOURCE_DIR}/cmake/${PROJECT_NAME}Config.cmake.in"
@@ -47,7 +47,7 @@ install(EXPORT ${PROJECT_NAME}_Targets
         DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/${PROJECT_NAME}/cmake)
 
 install(FILES "${PROJECT_BINARY_DIR}/${PROJECT_NAME}Config.cmake"
-              "${PROJECT_BINARY_DIR}/${PROJECT_NAME}ConfigVersion.cmake"
+#              "${PROJECT_BINARY_DIR}/${PROJECT_NAME}ConfigVersion.cmake"
         DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/${PROJECT_NAME}/cmake)
 
 install(DIRECTORY ${PROJECT_SOURCE_DIR}/include DESTINATION include)
