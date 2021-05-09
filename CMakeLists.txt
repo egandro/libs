@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.12)
 
-project("cpp_game_lib" VERSION 1.0.0
+project("cpp_game_lib"
              DESCRIPTION "Single-file public domain libraries for C/C++ (dual licensed under MIT)."
              HOMEPAGE_URL "https://github.com/mattiasgustavsson/libs")
 
