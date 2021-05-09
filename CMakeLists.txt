@@ -50,7 +50,10 @@ install(FILES "${PROJECT_BINARY_DIR}/${PROJECT_NAME}Config.cmake"
 #              "${PROJECT_BINARY_DIR}/${PROJECT_NAME}ConfigVersion.cmake"
         DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/${PROJECT_NAME}/cmake)
 
-install(FILES "*.h" DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
+install(FILES "app.h" "assetsys.h" "hashtable.h" "http.h" "ini.h"
+              "rnd.h" "speech.h" "strpool.h" "sysfont.h" "testfw.h"
+              "thread.h"
+        DESTINATION include)
 
 #set(CPACK_RESOURCE_FILE_LICENSE "${PROJECT_SOURCE_DIR}/LICENSE")
 
