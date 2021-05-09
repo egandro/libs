@@ -20,8 +20,8 @@ target_include_directories(
 
 target_compile_features(${PROJECT_NAME} INTERFACE cxx_std_17)
 
-enable_testing()
-add_subdirectory(test)
+#enable_testing()
+#add_subdirectory(test)
 
 # locations are provided by GNUInstallDirs
 install(TARGETS ${PROJECT_NAME}
